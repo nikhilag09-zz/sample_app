@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ruby on Rails Tutorial Sample App |<%= @title %></title>
+		<title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
 		<%= csrf_meta_tag %>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,5 +38,9 @@
 						</ul>
 					</nav>
 			</footer>
+
+			<%= debug(params) if Rails.env.devlopment? %>
+
 		</div>
-</body>
+	</body>
+</html>
