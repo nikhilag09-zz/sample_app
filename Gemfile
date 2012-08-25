@@ -11,6 +11,11 @@ gem "rspec-rails", "~> 2.11.0"
 
 gem 'rspec'
 gem 'webrat'
+gem 'gravatar_image_tag', '0.1.0'
+
+group :test do
+	gem 'factory_girl_rails'
+end
 
 
 # Gems used only for assets and not required
